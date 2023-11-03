@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nearr27
+  name: aldotr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nearr27
+      app: aldotr
   template:
     metadata:
       labels:
-        app: nearr27
+        app: aldotr
     spec:
       containers:
-      - image: okteto.dev/nearr27:latest
-        name: nearr27
+      - image: okteto.dev/aldotr:latest
+        name: aldotr
         envFrom:
         - configMapRef:
-            name: nearr27-config
+            name: aldotr-config
         livenessProbe:
           httpGet:
             path: /ht/
@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nearr27
+  name: aldotr
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
@@ -38,4 +38,4 @@ spec:
   - name: "nearr27"
     port: 8080
   selector:
-    app: nearr27
+    app: aldotr
