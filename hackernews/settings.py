@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'hackernews.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'xjogdikk',
-        'USER': 'xjogdikk',
-        'PASSWORD': '3vhA2AmR-usg5isXAklymXx6btvkxWZT',
-        'HOST': 'bubble.db.elephantsql.com',
+        'NAME': 'xlglkryo',
+        'USER': 'xlglkryo',
+        'PASSWORD': 'wUzCMlTD8vMCLa2K88z2XExe9VImvFAc',
+        'HOST': 'hansken.db.elephantsql.com',
         'PORT': '5432',
     },
     'test': {

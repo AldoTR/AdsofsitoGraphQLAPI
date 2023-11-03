@@ -1,6 +1,6 @@
 build:
-  nearr27:
-    image: okteto.dev/nearr27:latest
+  aldotr:
+    image: okteto.dev/aldotr:latest
 
 deploy:
   - okteto build # build the image with the latest code
